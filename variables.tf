@@ -19,15 +19,19 @@ variable "common_tags" {
 
 variable "public_cidr_block" {
   type = list 
-  default = ["10.10.1.0/24","10.10.2.0/24"]
+  default = ["10.0.1.0/24","10.0.2.0/24"]
 }
 
 variable "private_cidr_block" {
   type = list 
-  default = ["10.10.11.0/24","10.10.12.0/24"]
+  default = ["10.0.11.0/24","10.0.12.0/24"]
 }
 
 variable "database_cidr_block" {
   type = list 
-  default = ["10.10.21.0/24","10.10.22.0/24"]
+  default = ["10.0.21.0/24","10.0.22.0/24"]
+}
+
+variable "is_peering_connection" {
+  default = true
 }
